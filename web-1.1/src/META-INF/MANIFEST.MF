@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: web.Main
+Class-Path: json-20231013.jar fastcgi-lib.jar
+
