@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab1</title>
+    <link rel="stylesheet" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/big.js/6.1.1/big.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <div id="student-info" class="container">
+            <h1>Чэнь Жохань P3222 413107</h1>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <div id="graph" class="card">
+                <canvas id="Canv" width="400" height="400"></canvas>
+            </div>
+            <div id="point" class="card">
+                <form id="point-form">
+                    <div class="input-info">
+                        <label for="X">X: </label>
+                        <select id="X" name="X">
+                            <option value="-2">-2</option>
+                            <option value="-1.5">-1.5</option>
+                            <option value="-1">-1</option>
+                            <option value="-0.5">-0.5</option>
+                            <option value="0">0</option>
+                            <option value="0.5">0.5</option>
+                            <option value="1">1</option>
+                            <option value="1.5">1.5</option>
+                            <option value="2">2</option>
+                        </select>
+                    </div>
+                    <div class="input-info">
+                        <label for="Y">Y: </label>
+                        <input type="text" id="Y" name="Y" placeholder="от -3 до 5">
+                    </div>
+                    <div class="input-info">
+                        <label for="R">R: </label>
+                        <select id="R" name="R">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <button type="button" onclick="submitData()">Check</button>
+                </form>
+                <div id="result" class="card">
+                    <table>
+                        <tr>
+                            <th>X</th>
+                            <th>Y</th>
+                            <th>R</th>
+                            <th>Result</th>
+                            <th>Curtime</th>
+                            <th>Execution time</th>
+                        </tr>
+                        <tbody id="results"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="graph.js"></script>
+</body>
+</html>
