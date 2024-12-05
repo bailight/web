@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+    <servlet>
+        <servlet-name>controller</servlet-name>
+        <servlet-class>web.servlet.ControllerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>controller</servlet-name>
+        <url-pattern>/Ctrl</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AreaCheck</servlet-name>
+        <servlet-class>web.servlet.AreaCheckServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AreaCheck</servlet-name>
+        <url-pattern>/Area</url-pattern>
+    </servlet-mapping>
+</web-app>
