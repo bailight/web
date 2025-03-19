@@ -1,0 +1,196 @@
+body {
+    background-image: linear-gradient(120deg, #b297cd 0%, #9bc7f2 100%);
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+#student-info{
+    font-family: fantasy;
+    letter-spacing: 1px;
+    color: rgb(118, 127, 160);
+}
+
+.container{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+.container_start{
+    margin: 10px auto;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+.container.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    border-radius: 20px;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+.container #welcome{
+    height: 200px;
+    width: 800px;
+}
+
+.container #clock{
+    height: 500px;
+    width: 100%;
+    font-size: 2em;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: rgba(240, 240, 240, 0.8);
+}
+
+.container_start h1{
+    color: rgb(118, 127, 160);
+}
+
+#anniu{
+    display: flex;
+    margin: 10px auto;
+}
+
+.container #graph{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    height: 450px;
+    width: 450px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255, 0.6);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+}
+
+.container #point{
+    width: 50%;
+    margin: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container #info{
+    color: rgb(87, 94, 118);
+    width: 50%;
+    margin: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.container #info{
+    color: rgb(87, 94, 118);
+    width: 50%;
+    margin: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+#point-form{
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255, 0.6);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+}
+
+
+#point-form button{
+    margin: 10px auto;
+}
+
+
+#resultTable{
+    margin: 10px auto;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255, 0.6);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    height: 450px;
+}
+
+table{
+    margin: 10px;
+    width: 100%;
+}
+
+th, td {
+    padding-inline: 20px;
+    text-align: left;
+}
+
+.App {
+    text-align: center;
+
+
+}
+
+@media (min-width: 755px) and (max-width: 1206px) {
+    .container {
+        flex-direction: column;
+    }
+    .container #welcome {
+        width: 600px;
+    }
+    .container #graph {
+        width: 450px;
+        height: 450px;
+    }
+    .container #point,
+    .container #info {
+        width: 80%;
+    }
+}
+
+@media (max-width: 754px) {
+    .container {
+        flex-direction: column;
+    }
+    .container #welcome {
+        width: 100%;
+        height: auto;
+    }
+    .container #graph {
+        width: 100%;
+        height: 450px;
+    }
+    .container #point,
+    .container #info {
+        width: 90%;
+    }
+    #point-form {
+        flex-direction: column;
+    }
+    #resultTable {
+        height: auto;
+    }
+}
